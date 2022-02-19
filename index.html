@@ -944,7 +944,7 @@ chain.fcall(window.syscalls[6], kqueues[i]);
 chain.run();
 
 //Trigger OOB
-alert("Insert USB Drive and click OK after You See The Popup Notification, after jailbreak remove usb from PS4");
+alert("\n\nQuase pronto!!! Agora siga os passos abaixo para concluir o desbloqueio:\n\n1. Insira o USB com o arquivo exfathax_pico.img (pOOBs4). \n2. Após \"3s\" da notificação \"...USB é incompatível\", clique em OK.");
 //Trigger corrupt knote
 {
 for (var i = 1; i < NUM_KQUEUES; i += 2) {
@@ -973,12 +973,12 @@ chain.fcall(window.syscalls[203], patch_buffer, 0x4000);
 chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
 chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
 chain.run();
-alert("Jailbreak Done! Please Remove USB Drive and Click Ok.");
+alert("\n\n\nNa tentativa de evitar erros, remova o USB agora e clique em OK.");
 setTimeout(jbdone, 1000);
 }
 else
 {
-alert("failed to trigger exploit kernel heap might be corrupted, try again or reboot the console");
+alert("O desbloqueio FALHOU!!! Feche o navegador e\nrefaça \"TODO PROCESSO\", inclusive excluindo cookies e dados de sites.\n\nObservações:\nSó conecte o USB quando for solicitado.\nVerifeque se USB ficou bem conectado, permanecendo a falha,\npode ser que o USB esteja corrompido, reescreva a imagem.");
 p.write8(0, 0);
 }
 }
