@@ -14,7 +14,7 @@ window.applicationCache.ondownloading=function(){localStorage.isCached=!1},windo
 <script>  // verifica se a cache foi carregada
 function Esconder(){
 if (localStorage.isCached){
-poc();
+setTimeout(poc(),150);
 }
 }
 </script>
